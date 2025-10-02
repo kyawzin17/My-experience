@@ -1,0 +1,86 @@
+.header-con {
+    width: 100vw;
+    height: 11vh;
+    font-size: var(--fs);
+    background-color: var(--hbg);
+    color: var(--color);
+    position: sticky;
+    left: 0px; top: 0px;
+    display: flex;
+    justify-content: center;
+}
+.header-inner {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-logo {
+    padding: 0px 1px;
+    font-size: 1.3em;
+    color: var(--color);
+    user-select: none;
+}
+.header-logo:hover {
+    color: lightgreen;
+}
+.header-input {
+    height: 35px;
+    width: 15em;
+    display: flex;
+    align-items: center;
+}
+.input-tag {
+    width: 85%;
+    height: 100%;
+    border: 1px solid var(--bg);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    color: var(--bg);
+    padding: 10px 5px;
+    margin: 0px;
+}
+.input-tag:focus {
+    border: 1.3px solid rgb(8, 103, 247);
+    box-shadow: 0px 0px 10px white;
+    outline: none;
+}
+.search-icon {
+    font-size: var(--fs);
+    color: var(--color);
+    border: 1px solid var(--color);
+    border-left: 2px solid var(--bg);
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 6.8px 6px;
+}
+.search-icon:hover {
+    background-color: silver;
+}
+.header-ul {
+    display: flex;
+    justify-content: center;
+}
+.header-li {
+    list-style: none;
+    padding: 5px 10px;
+}
+.header-a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: var(--fs);
+    user-select: none;
+}
+.header-a:hover {
+    color: lightgreen;
+    font-size: 18.5px;
+}
+.nav-divider {
+    width: 1.5px;
+    height: 100%;
+    background-color: var(--color);
+}
+.header-select {
+    padding: 5px;
+    border-radius: 6px;
+}

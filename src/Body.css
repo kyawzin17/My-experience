@@ -1,0 +1,14 @@
+.body-con {
+    width: 100vw;
+    margin-top: 1px;
+    padding: 20px;
+}
+.body-c {
+    width: 100%;
+    margin: 0; padding: 0;
+    height: 88vh;
+    color: var(--color);
+}
+h1 {
+    text-align: center;
+}

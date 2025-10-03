@@ -46,16 +46,25 @@
     outline: none;
 }
 .search-icon {
+    display: inline-block;
     font-size: var(--fs);
     color: var(--color);
     border: 1px solid var(--color);
-    border-left: 2px solid var(--bg);
+    border-left: none;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
-    padding: 6.8px 6px;
+    text-align: center;
+    padding: 6.7px;
+    height: 100%;
+    width: 14%;
 }
 .search-icon:hover {
     background-color: silver;
+    color: var(--bg);
+}
+.search-icon:active {
+    color: lightgreen;
+    background-color: inherit;
 }
 .header-ul {
     display: flex;
@@ -64,6 +73,7 @@
 .header-li {
     list-style: none;
     padding: 5px 10px;
+    border-radius: 7px;
 }
 .header-a {
     text-decoration: none;

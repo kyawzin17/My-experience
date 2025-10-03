@@ -1,8 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-export default function Header() {
-
+export default function Header({scrollySection, ref, active}) {
     return (
         <div className="header-con">
             <div className="header-inner">
@@ -14,10 +13,10 @@ export default function Header() {
                     <i className="fa-solid fa-magnifying-glass search-icon"></i>{/*Icon ထည့်ရန်!*/}
                 </div>
                 <ul className="header-ul">
-                    <li className="header-li"><a className="header-a" href="#">Html</a></li>
-                    <li className="header-li"><a className="header-a" href="#">Css</a></li>
-                    <li className="header-li"><a className="header-a" href="#">JavaScript</a></li>
-                    <li className="header-li"><a className="header-a" href="#">React.js</a></li>
+                    <li className="header-li" onClick={() => scrollySection(ref.htmlRef, "html")} style={{background: active==="html" ? "blue" : "transparent"}}><a className="header-a" href="#">Html</a></li>
+                    <li className="header-li" onClick={() => scrollySection(ref.cssRef, "css")} style={{background: active==="css" ? "blue" : "transparent"}}><a className="header-a" href="#">Css</a></li>
+                    <li className="header-li" onClick={() => scrollySection(ref.javascriptRef, "javascript")} style={{background: active==="javascript" ? "blue" : "transparent"}}><a className="header-a" href="#">JavaScript</a></li>
+                    <li className="header-li" onClick={() => scrollySection(ref.reactRef, "react")} style={{background: active==="react" ? "blue" : "transparent"}}><a className="header-a" href="#">React.js</a></li>
                     <li className="header-li"><div className="nav-divider"></div></li>
                     <li className="header-li">
                         <select className="header-select">
